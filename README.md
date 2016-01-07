@@ -5,7 +5,7 @@ This is where we're working on dockerizing BrewPi. These files are constantly un
 
 To launch a BrewPi instance, download the docker-compose.yml file, and then run 
 ```
-docker-compose --x-networking up
+docker-compose --x-networking up -d
 ```
 
 ## Description
