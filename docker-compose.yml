@@ -1,0 +1,18 @@
+nginx:
+    image: vanosg/brewpi_nginx
+    container_name: nginx
+    ports:
+        - "80:80"
+    hostname: nginx
+fpm:
+    image: vanosg/brewpi_fpm
+    container_name: fpm
+    volumes_from:
+        - nginx
+    hostname: fpm
+
+brewpi:
+    image: vanosg/brewpi:latest
+    container_name: brewpi
+    hostname: brewpi
+
