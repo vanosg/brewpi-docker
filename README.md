@@ -3,7 +3,7 @@ BrewPi Docker TEST repository
 
 This is where we're working on dockerizing BrewPi. These files are constantly under construction, so please don't hesitate to report any issues you encounter!
 
-In the spirit of Docker, each service (and data store) has been broken out into its own container. As such, running BrewPi will require you to run 4 containers. To simplify this, we have constructed a docker-compose.yml file. To launch a BrewPi instance, use the docker-compose.yml file for your architecture (x86_64 if you're using a 32- or 64-bit system like Ubuntu or Debian, or raspberrypi_arm if you're running on a Raspberry PI), and then run:
+In the spirit of Docker, each service (and data store) has been broken out into its own container. As such, running BrewPi will require you to run 4 containers. To simplify this, we have constructed a docker-compose.yml file. To launch a BrewPi instance, use the docker-compose.yml file for your architecture (cd into the x86_64 directory if you're using a 32- or 64-bit system like Ubuntu or Debian, or cd into the raspberrypi_arm if you're running on a Raspberry Pi), and then run:
 
 *x86_64*
 ```
