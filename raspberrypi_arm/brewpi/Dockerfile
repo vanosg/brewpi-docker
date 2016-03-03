@@ -1,4 +1,3 @@
-#from sdhibit/rpi-raspbian
 FROM resin/rpi-raspbian
 MAINTAINER Geo VO <george.vo@alum.rpi.edu>
 
