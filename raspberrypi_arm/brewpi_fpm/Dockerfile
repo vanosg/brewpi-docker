@@ -101,8 +101,6 @@ RUN set -ex \
 		echo '[www]'; \
 		echo 'listen = [::]:9000'; \
 	} | tee php-fpm.d/zz-docker.conf
-
-### MOVE ME!!!
 RUN chmod +x /usr/local/bin/docker-php-ext-install
 RUN chmod +x /usr/local/bin/docker-php-ext-configure
 RUN chmod +x /usr/local/bin/docker-php-ext-enable
