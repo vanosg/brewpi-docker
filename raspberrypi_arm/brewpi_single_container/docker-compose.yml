@@ -1,0 +1,14 @@
+version: '2'
+services:
+  brewpi:
+    image: vanosg/rpi-brewpi-omni:latest
+    container_name: brewpi
+    hostname: brewpi
+    ports:
+        - 80:80
+    volumes:
+        - ~/brewpi_data:/brewpi
+
+networks:
+    default:
+      driver: bridge
