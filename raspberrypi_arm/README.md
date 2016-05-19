@@ -19,7 +19,7 @@ docker-compose up
 ```
 If you wish to background these processes, just add a d!
 ```
-docker-compose -d up  
+docker-compose up -d  
 ```
 For those of you using an Arduino (legacy code) instead of the newer Spark, you'll need to specify that by using
 ```
