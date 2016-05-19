@@ -8,7 +8,7 @@ http://blog.hypriot.com/downloads/
 
 Once you have that running, you MUST do
 ```
-apt-get update && apt-get install -y apt-get docker-hypriot docker-compose
+apt-get update && apt-get install -y docker-hypriot docker-compose
 ```
 This will ensure you have Docker 1.10+ and Docker Compose 1.6+, required to use this docker-compose.yml file
 
