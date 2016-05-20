@@ -4,10 +4,15 @@ services:
     image: vanosg/rpi-brewpi-omni:latest
     container_name: brewpi
     hostname: brewpi
+    environment:
+        - system=$system
+    devices:
+        - "/dev/ttyACM0:/dev/ttyACM0"
+        - "/dev/ttyAMA0:/dev/ttyAMA0"
     ports:
         - 80:80
     volumes:
-        - ~/brewpi_data:/brewpi
+        - ~/brewpi-data:/brewpi
 
 networks:
     default:
