@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER Geo VO <george.vo@alum.rpi.edu>
 
-RUN apt-get update && apt-get install -y build-essential python-dev python-pip git cron ed php-fpm nginx
+RUN apt-get update && apt-get install -y build-essential python-dev python-pip git cron ed php-fpm nginx sudo php-mbstring
 RUN pip install pyserial psutil simplejson configobj gitpython --upgrade
 RUN useradd -G www-data,dialout brewpi
 RUN bash -c "echo -e \"brewpi\nbrewpi\"|passwd brewpi"
