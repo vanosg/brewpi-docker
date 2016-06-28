@@ -1,7 +1,5 @@
 These containers will only run on an ARM based system, such as a Raspberry Pi. 
 
-There are two ways to run BrewPi on docker: as a completely self-contained, all-in-one container (brewpi_single_container), or as four individual containers, with one process per container as docker philosophy dictates. The multi-container image isn't quite perfect yet, so I'd recommend using the single container image for now!
-
 ### How to install Docker on your Pi
 As of this writing, the easiest way to get Docker on a Raspberry Pi is to use the Hypriot image. The base image can be found here: 
 http://blog.hypriot.com/downloads/
