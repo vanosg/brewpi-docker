@@ -13,6 +13,7 @@ services:
         - 80:80
     volumes:
         - ~/brewpi-data:/brewpi
+    restart: always
 
 networks:
     default:
