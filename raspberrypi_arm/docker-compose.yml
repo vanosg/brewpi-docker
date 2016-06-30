@@ -1,6 +1,7 @@
 version: '2'
 services:
   brewpi:
+    build: .
     image: vanosg/rpi-brewpi-omni:latest
     container_name: brewpi
     hostname: brewpi
@@ -13,6 +14,7 @@ services:
         - 80:80
     volumes:
         - ~/brewpi-data:/brewpi
+    restart: always
 
 networks:
     default:

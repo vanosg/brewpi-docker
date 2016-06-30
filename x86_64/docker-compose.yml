@@ -1,6 +1,7 @@
 version: '2'
 services:
   brewpi:
+    build: .
     image: vanosg/brewpi-omni:latest
     container_name: brewpi
     hostname: brewpi
@@ -8,11 +9,12 @@ services:
         - system=$system
     devices:
         - "/dev/ttyACM0:/dev/ttyACM0"
-#        - "/dev/ttyAMA0:/dev/ttyAMA0"
+        #- "/dev/ttyAMA0:/dev/ttyAMA0"
     ports:
         - 80:80
     volumes:
         - ~/brewpi-data:/brewpi
+    restart: always
 
 networks:
     default:

@@ -1,7 +1,7 @@
 FROM resin/rpi-raspbian
 MAINTAINER Geo VO <george.vo@alum.rpi.edu>
 
-RUN apt-get update && apt-get install -y build-essential python-dev python-pip git cron ed php5-fpm nginx
+RUN apt-get update && apt-get install -y build-essential python-dev python-pip git cron ed php5-fpm nginx arduino-core
 RUN pip install pyserial psutil simplejson configobj gitpython --upgrade
 RUN useradd -G www-data,dialout brewpi
 RUN bash -c "echo -e \"brewpi\nbrewpi\"|passwd brewpi"
