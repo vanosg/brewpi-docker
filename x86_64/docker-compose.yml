@@ -2,7 +2,7 @@ version: '2'
 services:
   brewpi:
     build: .
-    image: vanosg/rpi-brewpi-omni:latest
+    image: vanosg/brewpi-omni:latest
     container_name: brewpi
     hostname: brewpi
     environment:
