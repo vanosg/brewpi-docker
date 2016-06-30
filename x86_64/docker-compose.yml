@@ -1,18 +1,20 @@
 version: '2'
 services:
   brewpi:
-    image: vanosg/brewpi-omni:latest
+    build: .
+    image: vanosg/rpi-brewpi-omni:latest
     container_name: brewpi
     hostname: brewpi
     environment:
         - system=$system
     devices:
         - "/dev/ttyACM0:/dev/ttyACM0"
-#        - "/dev/ttyAMA0:/dev/ttyAMA0"
+        #- "/dev/ttyAMA0:/dev/ttyAMA0"
     ports:
         - 80:80
     volumes:
         - ~/brewpi-data:/brewpi
+    restart: always
 
 networks:
     default:
