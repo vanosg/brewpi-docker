@@ -25,9 +25,4 @@ For those of you using an Arduino (legacy code) instead of the newer Spark, you'
 system=arduino docker-compose up
 ```
 
-If you want to rebuild your own brewpi image, you can
-```
-docker-compose build
-```
-
 With that, you should be good to go! Happy Brewing!
