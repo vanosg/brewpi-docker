@@ -8,7 +8,6 @@ services:
         - system=$system
     devices:
         - "/dev/ttyACM0:/dev/ttyACM0"
-        - "/dev/ttyAMA0:/dev/ttyAMA0"
     ports:
         - 80:80
     volumes:
